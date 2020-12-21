@@ -1,0 +1,305 @@
+.App {
+  
+  background-color: #282c34;
+  height: 100%;
+}
+
+body,html
+{
+  background-color: #282c34;
+  margin: 0;
+  min-height: 100%;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.movie-page-container
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+
+}
+.movie-title {
+  background-color: #282c34;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-content
+{
+  display: flex;
+  
+  align-items:center;
+  flex-direction: column;
+  grid-row: 2/3;
+  grid-column: 1/4;
+  min-height: 100vh;
+ 
+}
+.main-content img
+{
+  cursor: pointer;
+}
+
+.plot
+{
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.add-to-list-button
+{
+  margin-top: 30px;
+  background: gray;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  user-select: none;
+}
+.add-to-list-button:hover
+{
+  background-color: lightgray;
+}
+.add-to-list-button:active
+{
+  background-color: greenyellow;
+}
+
+
+
+.score-container
+{
+  margin-top: 10px;
+  display: flex;
+  
+
+}
+.score
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: flex-end;
+}
+
+.score-logo
+{
+  width: 100px;
+}
+.score-value
+{
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+}
+
+.search-module .results
+{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  background-color: rgb(75, 82, 90);
+  width: fit-content;
+
+  position: absolute;
+  top: 175px;
+}
+
+.search-bar-item
+{
+  border-bottom: 1px solid rgb(112, 123, 134);
+  display: flex;
+  width: 600px;
+  height: 100px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  
+}
+.search-bar-item:hover
+{
+  box-shadow: inset 0px 0px 0 3px #888888;
+}
+.empty-list
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.search-bar-item img
+{
+align-self: flex-start;
+height: inherit;
+
+
+}
+
+.show-my-list
+{
+  width: 250px;
+  height: 75px;
+  text-align: center;
+  background-color: #1E1E20;
+  border-radius: 10px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  cursor: pointer;
+  transition: all .4s;
+  user-select: none;
+}
+.show-my-list:hover
+{
+  background-color: #969696;
+  color: #1E1E20;
+}
+
+.search-bar-item .search-item-info
+{
+  display: flex;
+  flex-direction: column;
+
+  color: aliceblue;
+  font-size: 20px;
+  
+}
+
+.author-name
+{
+  position: sticky;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(150, 150, 150, 150);
+  font-size: 20px;
+}
+
+
+.search-bar
+{
+  padding: 0 30px;
+	font-size: 18px;
+	width: 400px;
+	max-width: 400px;
+	height: 80px;
+	outline: none;
+	border-radius: 20px;
+
+}
+.submit
+{cursor: pointer;
+	border: none;
+	background: #1E1E20;
+	
+	border-radius: 0 20px 20px 0;
+	padding: 15px 25px;
+  display: inline-flex;
+  width: 100px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.submit img
+{
+  height: 35px;
+  width: 35px;
+  color: white;
+  
+}
+
+.return-home
+{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  background-color: #1E1E20;
+  border: none;
+}
+.return-home:focus
+{
+  outline: none;
+}
+.return-home:hover
+{
+  outline: rgb(112, 123, 134) solid 2px;
+}
+
+
+.search-module
+{
+  display: flex;
+  justify-content: center;
+	
+}
+.search-bar-wrapper
+{
+  display: flex;
+  justify-content: center;
+	position: relative;
+	height: 80px;
+	font-size: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.enterypage-container
+{
+  display: flex;
+  flex-direction: column;
+
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fill-up-div
+{
+  height: 75vh;
+
+
+
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
