@@ -3,9 +3,10 @@ import { SearchBar } from "./SearchBar";
 
 import {GenerateMoviePage} from "./MoviePage";
 import { useEffect, useState } from 'react';
-import homelogo from "./home.svg";
+import homelogo from "./images/home.svg";
 import { MyList } from "./MyList";
 import { clear } from 'console';
+import React from 'react';
 // api key 1beb6cab
 
 function EnteryPage(params:any) {

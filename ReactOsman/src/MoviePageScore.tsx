@@ -1,6 +1,7 @@
-import imdbLogo from './imdblogo.jpg';
-import rottenlogo from "./rottentomatoeslogo.png";
-import  metalogo  from "./metacriticlogo.png";
+import imdbLogo from './images/imdblogo.jpg';
+import rottenlogo from "./images/rottentomatoeslogo.png";
+import  metalogo  from "./images/metacriticlogo.png";
+import React from 'react';
 
 class Scores {
     public Source: string = ""; 
